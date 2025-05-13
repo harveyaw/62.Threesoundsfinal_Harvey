@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Video with Switchable Audio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Video that plays full screen -->
+    <video id="video" autoplay muted loop>
+        <source src="video/video01.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio element (no controls, managed via JS) -->
+    <audio id="audio" autoplay loop></audio>
+
+    <!-- Text boxes in the lower third for switching audio tracks -->
+    <div class="text-box-container">
+        <div class="text-box" data-track="0">Ambience of the Bus</div>
+        <div class="text-box" data-track="1">Music</div>
+        <div class="text-box" data-track="2">Voice over</div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

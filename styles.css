@@ -1,0 +1,51 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make body and html full screen */
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Fullscreen video */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the full screen is filled */
+    z-index: -1;
+}
+
+/* Container for the text boxes in lower third */
+.text-box-container {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+/* Each individual text box */
+.text-box {
+    background-color: rgba(67,92,53,0.80); /* Semi-transparent background */
+    color: #000000;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+.text-box:hover {
+    background-color: rgba(255, 255, 0, 0.9);
+}
